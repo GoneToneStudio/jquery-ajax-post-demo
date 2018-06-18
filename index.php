@@ -1,3 +1,10 @@
+<!--
+    旋風之音 GoneTone
+    https://blog.reh.tw/
+
+    範例教學
+    https://blog.reh.tw/archives/662/
+-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -29,8 +36,8 @@
                     url: "service.php", //傳送目的地
                     dataType: "json", //資料格式
                     data: { //傳送資料
-                        nickname: $("#nickname").val(),
-                        gender: $("#gender").val()
+                        nickname: $("#nickname").val(), //表單欄位 ID nickname
+                        gender: $("#gender").val() //表單欄位 ID gender
                     },
                     success: function(data) {
                         if (data.nickname) { //如果後端回傳 json 資料有 nickname
